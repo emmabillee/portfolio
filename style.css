@@ -1,0 +1,226 @@
+/* Reset / normalisering */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Grundlæggende typografi */
+body {
+/* max-width: 1512px; */
+  margin: 0 auto;
+  padding: 0;
+
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: #6C5848;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Overskrifter */
+h1{
+font-family: "Libre Baskerville", serif;
+font-weight: 500;
+margin-bottom: 0.5rem;
+line-height: 1.2;
+font-size: 50px;
+}
+h2{
+font-family: "Libre Baskerville", serif;
+font-weight: bold;
+margin-bottom: 0.5rem;
+line-height: 1.2;
+font-size: 40px;
+}
+h3{
+font-family: "Almarai", sans-serif;
+font-weight: bold;
+margin-bottom: 0.5rem;
+line-height: 1.2;
+font-size: 30px;
+}
+h4{
+font-family: "Almarai", sans-serif;
+font-weight: bold;
+margin-bottom: 0.5rem;
+line-height: 1.2;
+font-size: 25px;
+}
+
+
+
+/* Paragrafer */
+p {
+margin-bottom: 1rem;
+font-family: "Almarai", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+/*Nav bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Skubber logo til venstre, links til højre */
+  align-items: center;            /* Vertikal centrering */
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  font-family: "Almarai", sans-serif;
+  border-bottom: 2px solid #6C5848; /* farve og tykkelse på linjen */
+
+}
+
+.logo {
+  padding: 0.5rem 1rem;
+  border-radius: 50% / 50%;
+  margin-right: 500px;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 100px; */
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6C5848;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 25px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Intro */
+.overskrift{
+font-family: "Libre Baskerville", serif;
+font-size: 60px;
+line-height: 48px; 
+margin-bottom: 20px;  
+margin-top: -90px;
+}
+
+.underoverskrift{
+font-family: "Libre Baskerville", serif;
+font-style: italic;
+font-size: 40px;
+line-height: 48px;
+margin: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 40px;                      
+  padding-left: 100px;
+  color: #6C5848;
+}
+
+.kolonne {
+  flex: 1; 
+  margin: 0;
+}
+
+.kolonne img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+.kolonne:last-child {
+  flex: 1;
+}
+
+.kolonne:last-child img {
+  width: 100vw;      
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+/* CV */
+#cv-sektion{
+    background-color: #6C5848;
+}
+#cv{
+    color: #fff;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 75px;
+    padding-bottom: 0px;
+}
+#cv h2{
+margin-bottom: 20px;
+}
+.grid1{
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    justify-content:space-between;
+}
+.grid1 p{
+    margin: 0;
+}
+.linje {
+  height: 2px;
+  background-color: #fff;
+  width: auto;
+  margin: 2rem 0;
+  margin-top: 0;
+}
+.cta-knap{
+    background-color: #fff;
+    color: #6C5848;
+    border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Almarai", sans-serif;
+  margin-bottom: 50px;
+}
+.cta-knap:hover {
+  background-color: #9d9d9d;
+}
+.knap{
+padding-bottom: 75px;}
+
+
+
