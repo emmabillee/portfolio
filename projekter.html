@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="./img/logo.png" alt="logo" height="40px"></div>
+            <div>
+                 <ul class="nav-links">
+                 <li><a href="./projekter.html">Projekter</a></li>
+                 <li><a href="./cv.html">CV</a></li>
+                 <li><a href="./ommig.html">Om mig</a></li>
+                 <li><a href="./kontakt.html">Kontakt</a></li>
+                 </ul>
+            </div>  
+         </nav>
+    </header>
+
+    <main>
+        <section id="projekter">
+            <div>
+                <h2>Udvalgte projekter</h2>
+                <div class="grid2">
+                    <div class="projekt">
+                        <img src="./img/VildDyrekort.png" alt="Vild-dyrekort">
+                        <h3>Vild Dyrekort</h3>
+                        <p>Værdiskabelse • Strategi • Teknologi </p>
+                        <a href="#cv" class="cta-knap2">Se mere</a>
+                    </div>
+                    <div class="projekt">
+                        <img src="./img/GirlTalk.png" alt="GirlTalk">
+                        <h3>GirlTalk</h3>
+                        <p>Konceptudvikling • Brugeroplevelse </p>
+                        <a href="#cv" class="cta-knap2">Se mere</a>
+                    </div>
+                    <div class="projekt">
+                        <img src="./img/DanskeSpil.png" alt="Danske-spil">
+                        <h3>Danske Spil</h3>
+                        <p>Projektledelse • Design Sprint</p>
+                        <a href="#cv" class="cta-knap2">Se mere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="projekter2">
+            <div>
+                <div class="grid2">
+                    <div class="projekt">
+                        <img src="./img/Tivoli.png" alt="Tivoli">
+                        <h3>Tivoli</h3>
+                        <p>Værdiskabelse • Strategi • Teknologi </p>
+                        <a href="#cv" class="cta-knap">Se mere</a>
+                    </div>
+                    <!-- <div class="projekt">
+                        <img src="./img/GirlTalk.png" alt="GirlTalk">
+                        <h3>GirlTalk</h3>
+                        <p>Konceptudvikling • Brugeroplevelse </p>
+                        <a href="#cv" class="cta-knap2">Se mere</a>
+                    </div>
+                    <div class="projekt">
+                        <img src="./img/DanskeSpil.png" alt="Danske-spil">
+                        <h3>Danske Spil</h3>
+                        <p>Projektledelse • Design Sprint</p>
+                        <a href="#cv" class="cta-knap2">Se mere</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel" id="carousel">
+            <div class="slides">
+                <img src="./img/DanskeSpil.png" alt="Billede 1">
+                <img src="./img/GirlTalk.png" alt="Billede 2">
+                <img src="./img/Tivoli.png" alt="Billede 3">
+                <img src="./img/VildDyrekort.png" alt="Billede 4">
+                <img src="./img/DesignSprint.png" alt="Billede 5">
+
+                 <img src="./img/DanskeSpil.png" alt="Billede 1">
+                <img src="./img/GirlTalk.png" alt="Billede 2">
+                <img src="./img/Tivoli.png" alt="Billede 3">
+                <img src="./img/VildDyrekort.png" alt="Billede 4">
+                <img src="./img/DesignSprint.png" alt="Billede 5">
+            </div>
+
+            <button class="prev" onclick="skiftSlide(-1)">‹</button>
+            <button class="next" onclick="skiftSlide(1)">›</button>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer1">
+                <img src="./img/logo.png" alt="logo" class="logo-footer">
+                <p>©2023 Emma Ardal Bille – alle rettigheder forbeholdes</p>
+            </div>
+            <div class="footer2">
+                <img src="./img/Telefon.png" alt="telefon">
+                <img src="./img/Mail.png" alt="mail">
+                <img src="./img/LinkedIn.png" alt="linkedin">
+            </div>
+        </section>
+  </footer>
+</body>
+</html>
+
+<script src="script.js"></script>

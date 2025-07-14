@@ -7,68 +7,7 @@ body {
   padding: 0;
 
 }
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
-  font-size: 0.9rem;
-  display:flex ;
-  gap: 200px;
-}
-.footer1{
-  display: flex;
-  justify-content:center ;
-    align-items: center; /* Centrerer elementerne vertikalt */
-gap: 20px;
-}
-.footer2{
-  display: flex;
-  gap: 20px;
-}
-.footer2 img{
-  width: 20px;
-  height: auto;
-}
-.logo-footer {
-  padding: 0.5rem 1rem;
-  border-radius: 50% / 50%;
-}
-
-/***CTA knap***/
-.cta-knap{
-  background-color: #fff;
-  color: #6C5848;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 25px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Almarai", sans-serif;
-  margin-bottom: 50px;
-}
-.cta-knap:hover {
-  background-color: #9d9d9d;
-}
-.cta-knap2{
-  background-color: #6C5848;
-  color: #fff;
-  border: none;
-  padding: 10px 60px;
-  font-size: 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Almarai", sans-serif;
-  margin-bottom: 50px;
-  font-weight: 200;
-}
-.cta-knap:hover2 {
-  background-color: #9d9d9d;
-}
-
-/* Links */
+/***Links***/
 a {
   color: #6C5848;
   text-decoration: none;
@@ -78,7 +17,7 @@ a:focus {
   text-decoration: underline;
 }
 
-/* Overskrifter */
+/***Overskrifter***/
 h1{
 font-family: "Libre Baskerville", serif;
 font-weight: 500;
@@ -107,10 +46,6 @@ margin-bottom: 0.5rem;
 line-height: 1.2;
 font-size: 25px;
 }
-
-
-
-/* Paragrafer */
 p {
 margin-bottom: 1rem;
 font-family: "Almarai", sans-serif;
@@ -119,16 +54,48 @@ font-family: "Almarai", sans-serif;
 
 }
 
-/*Nav bar*/
+/***CTA knap***/
+.cta-knap{
+  background-color: #fff;
+  color: #6C5848;
+  border: none;
+  padding: 10px 60px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Almarai", sans-serif;
+  margin-bottom: 50px;
+}
+.cta-knap:hover {
+  background-color: #9d9d9d;
+}
+.cta-knap2{
+  background-color: #6C5848;
+  color: #fff;
+  border: none;
+  padding: 10px 60px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Almarai", sans-serif;
+  margin-bottom: 50px;
+  font-weight: 200;
+}
+.cta-knap:hover2 {
+  background-color: #9d9d9d;
+}
+
+/***Nav bar***/
 .navbar {
   display: flex;
-  justify-content: space-between; /* Skubber logo til venstre, links til højre */
-  align-items: center;            /* Vertikal centrering */
+  justify-content: space-between; 
+  align-items: center;            
   padding: 1rem 2rem;
   background-color: #ffffff;
   font-family: "Almarai", sans-serif;
-  border-bottom: 2px solid #6C5848; /* farve og tykkelse på linjen */
-
+  border-bottom: 2px solid #6C5848;
 }
 .logo {
   padding: 0.5rem 1rem;
@@ -163,6 +130,41 @@ nav ul {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+/***Footer***/
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+  display:flex ;
+  gap: 700px;
+  background-color: #fff;
+  border-top: 2px solid #6C5848;
+  justify-content: center;
+}
+.footer1{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.footer1 p{
+  padding-top: 15px;
+  color: #9d9d9d;
+}
+.footer2{
+  gap: 20px;
+}
+.footer2 img{
+  width: 30px;
+  height: auto;
+  padding: 10px;
+}
+.logo-footer {
+  padding: 0.5rem 1rem;
+  border-radius: 50% / 50%;
+  height: 40px;
 }
 
 /***Intro***/
@@ -212,7 +214,6 @@ nav a {
   margin: 0;
 }
 
-
 /***CV***/
 #cv-sektion{
   background-color: #6C5848;
@@ -261,9 +262,11 @@ nav a {
   margin-bottom: 20px;
 }
 .grid2{
-  display: flex;
+  display: grid;
   gap: 50px;
   justify-content: center;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+
 }
 .grid2 h3{
   font-family: "Libre Baskerville", serif;
@@ -274,7 +277,6 @@ nav a {
 .grid2 p{
   margin-bottom: 20px;
 }
-
 
 /***Kontakt***/
 #kontakt{
@@ -304,9 +306,42 @@ nav a {
   aspect-ratio: 1 / 1;
     margin-top: 50px;
 }
-.kolonne,
-.grid1 > div,
-.grid2 > div {
-  flex: 1 1 0; /* Lige bredde uanset indholdets længde */
+
+/***Projekter2***/
+#projekter2{
+  color: #fff;
+  background-color: #6C5848;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 50px;
+  padding: 75px;
 }
 
+/***Billedecarousel***/
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 16px;
+  padding: 20px;
+  cursor: grab;
+  user-select: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 30px;
+
+}
