@@ -314,7 +314,7 @@ nav a {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   gap: 50px;
   padding: 75px;
 }
@@ -330,6 +330,7 @@ nav a {
   cursor: grab;
   user-select: none;
   scrollbar-width: none; /* Firefox */
+  margin-bottom: 30px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -345,3 +346,40 @@ nav a {
   margin-right: 30px;
 
 }
+
+/***CV2***/
+#cv-sektion2{
+  background-color: #fff;
+}
+#cv2{
+  display: flex;
+  color: #6C5848;
+  gap: 200px;
+  justify-content: center;
+  padding: 75px;
+  padding-bottom: 0px;
+}
+#cv2 h1{
+  color: #6C5848;
+}
+#cv2 h2{
+  margin-bottom: 20px;
+}
+.grid1-cv{
+  display: flex;
+  gap: 200px;
+  margin: 0;
+  justify-content:space-between;
+}
+.grid1 p{
+  margin: 0;
+}
+.linje2 {
+  height: 2px;
+  background-color: #6C5848;
+  width: auto;
+  margin: 20px 0;
+  margin-top: 0;
+}
+.knap{
+  padding-bottom: 75px;}
