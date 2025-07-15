@@ -47,7 +47,6 @@ line-height: 1.2;
 font-size: 25px;
 }
 p {
-margin-bottom: 1rem;
 font-family: "Almarai", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -68,7 +67,8 @@ font-family: "Almarai", sans-serif;
   margin-bottom: 50px;
 }
 .cta-knap:hover {
-  background-color: #9d9d9d;
+  background-color: #D9C7B8;
+  text-decoration: none;
 }
 .cta-knap2{
   background-color: #6C5848;
@@ -83,8 +83,9 @@ font-family: "Almarai", sans-serif;
   margin-bottom: 50px;
   font-weight: 200;
 }
-.cta-knap:hover2 {
-  background-color: #9d9d9d;
+.cta-knap2:hover {
+  background-color: #D9C7B8;
+  text-decoration: none;
 }
 .cta-knap3{
   background-color: #6C5848;
@@ -99,20 +100,23 @@ font-family: "Almarai", sans-serif;
   font-weight: 200;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 30px;
 }
-.cta-knap:hover3 {
-  background-color: #9d9d9d;
+.cta-knap3:hover {
   text-decoration: none;
 }
 .cta-knap4{
   background-color: #FF9A00;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -123,19 +127,27 @@ font-family: "Almarai", sans-serif;
   display: flex;                  /* Aktiverer flex layout */
   align-items: center;           /* Vertikal centrering */
   justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+   gap: 10px;                    /* Afstand mellem billede og tekst */
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
 }
 .cta-knap4 a{
   color: #3e0000;
+}
+.cta-knap4 a:hover {
+  text-decoration: none;
+}
+.cta-knap4 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap5{
   background-color: #9999FF;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -143,22 +155,30 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap5 a:hover {
+  text-decoration: none;
 }
 .cta-knap5 a{
   color: #00005B;
+}
+.cta-knap5 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap6{
   background-color: #31A8FF;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -166,12 +186,20 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap6 a:hover {
+  text-decoration: none;
+}
+.cta-knap6 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap6 a{
   color: #001E36;
@@ -180,8 +208,8 @@ font-family: "Almarai", sans-serif;
   background-color: #FF3366;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -189,12 +217,20 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap7 a:hover {
+  text-decoration: none;
+}
+.cta-knap7 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap7 a{
   color: #49021F;
@@ -203,8 +239,8 @@ font-family: "Almarai", sans-serif;
   background-color: #0ACF83;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -212,12 +248,20 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap8 a:hover {
+  text-decoration: none;
+}
+.cta-knap8 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap8 a{
   color: #03011C;
@@ -226,8 +270,9 @@ font-family: "Almarai", sans-serif;
   background-color: #3C99D4;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  border: none;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -235,12 +280,20 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap9 a:hover {
+  text-decoration: none;
+}
+.cta-knap9 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap9 a{
   color: #FFFFFF;
@@ -249,8 +302,8 @@ font-family: "Almarai", sans-serif;
   background-color: #00759B;
   color: #3e0000;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -258,22 +311,31 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap10 a:hover {
+  text-decoration: none;
+}
+.cta-knap10 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap10 a{
   color: #FFFFFF;
+  text-decoration: none;
 }
 .cta-knap11{
   background-color: #FFFFFF;
   color: #3e0000;
   border: #1D94DA 2px solid;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 0px 50px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -281,12 +343,20 @@ font-family: "Almarai", sans-serif;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  display: flex;                  /* Aktiverer flex layout */
-  align-items: center;           /* Vertikal centrering */
-  justify-content: center;       /* Horisontal centrering */
-  gap: 10px;                     /* Afstand mellem billede og tekst */
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+   gap: 10px;                    
   margin: 6px;
   white-space: nowrap;
+  height: 50px;
+}
+.cta-knap11 a:hover {
+  text-decoration: none;
+}
+.cta-knap11 img {
+  height: 25px;
+  width: auto;
 }
 .cta-knap11 a{
   color: #1D94DA;
@@ -564,6 +634,7 @@ nav a {
   padding: 75px;
   padding-bottom: 0px;
 }
+
 #cv2 h1{
   color: #6C5848;
 }
@@ -595,12 +666,15 @@ color: #6C5848;
 font-weight: 400;
 }
 .kompetencer{
-display: flex;
+  display: flex;
   flex-wrap: wrap;              
-  justify-content: center;       
-  gap: 12px 15px;               
+  justify-content: left;       
+  gap: 5px 5px;               
   max-width: 600px;             
   margin: 0 auto;  
+}
+#grid-kompetencer{
+margin-left: 100px;
 }
 
 /***Værktøjer***/
@@ -611,9 +685,46 @@ font-weight: 400;
 .værktøjer{
 display: flex;
   flex-wrap: wrap;              
-  justify-content: center;       
-  gap: 12px 15px;               
-  max-width: 600px;             
+  justify-content: left;       
+  gap: 5px 5px;               
+  max-width: 1500px;             
   margin: 0 auto;  
 }
+#grid-værktøjer{
+margin-left: 100px;
+}
 
+/***Erfaring***/
+#erfaring{
+  background-color: #fff;
+}
+#erfaring{
+  /* display: flex; */
+  color: #6C5848;
+  gap: 200px;
+  justify-content: center;
+  padding: 75px;
+  padding-bottom: 0px;
+  margin-bottom: 50px;
+}
+#erfaring h1{
+  color: #6C5848;
+}
+#erfaring h2{
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner */
+  gap: 50px;
+  align-items: start;
+  padding: 40px;
+}
+
+.venstre-kolonne,
+.højre-kolonne {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
