@@ -7,6 +7,7 @@ body {
   padding: 0;
 
 }
+
 /***Links***/
 a {
   color: #6C5848;
@@ -33,7 +34,7 @@ line-height: 1.2;
 font-size: 40px;
 }
 h3{
-font-family: "Almarai", sans-serif;
+font-family: "Libre Baskerville", serif;
 font-weight: bold;
 margin-bottom: 0.5rem;
 line-height: 1.2;
@@ -516,7 +517,7 @@ nav a {
 .linje {
   height: 2px;
   background-color: #fff;
-  width: auto;
+  width: 500px;
   margin: 2rem 0;
   margin-top: 0;
 }
@@ -567,12 +568,15 @@ nav a {
 }
 .grid3{
   display: flex;
-  gap: 300px;
+  gap: 100px;
   margin: 0;
   justify-content: center;
 }
 .grid3 p{
   margin: 0;
+}
+.grid3 a{
+  color: #fff;
 }
 .billede-kontakt{
   max-width: 400px;
@@ -581,6 +585,7 @@ nav a {
   aspect-ratio: 1 / 1;
     margin-top: 50px;
 }
+
 
 /***Projekter2***/
 #projekter2{
@@ -607,11 +612,9 @@ nav a {
   scrollbar-width: none; /* Firefox */
   margin-bottom: 30px;
 }
-
 .carousel::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
-
 .carousel img {
   flex: 0 0 auto;
   width: 300px;
@@ -625,6 +628,7 @@ nav a {
 /***CV2***/
 #cv-sektion2{
   background-color: #fff;
+ 
 }
 #cv2{
   display: flex;
@@ -632,6 +636,7 @@ nav a {
   gap: 200px;
   justify-content: center;
   padding: 75px;
+  padding-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -704,6 +709,7 @@ margin-left: 100px;
   gap: 200px;
   justify-content: center;
   padding: 75px;
+  padding-top: 20px;
   padding-bottom: 0px;
   margin-bottom: 50px;
 }
@@ -727,4 +733,114 @@ margin-left: 100px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+/***Om mig***/
+#ommig-tekst{
+  color: #6C5848;
+  flex: 2;
+  max-width: 500px;
+}
+#ommig-tekst h2{
+  color: #6C5848;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+#ommig-tekst h3{
+  color: #6C5848;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#ommig-tekst li{
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Almarai", sans-serif;
+}
+#ommig-tekst ul{
+  list-style-type: disc;
+  margin-left: 1.5rem; /* rykker dem lidt ind */
+  padding-left: 0;
+}
+#ommig-tekst p{
+  font-size: 16px;
+  font-family: "Almarai", sans-serif;
+  line-height: 30px;
+  margin-top: 10px;
+}
+#ommig {
+  padding: 3rem 2rem;
+  background-color: #fdfdfd;
+}
+.ommig-wrapper {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* gør den mobilvenlig */
+}
+#ommig-billede {
+  flex: 1;
+  max-width: 500px;
+}
+#ommig-billede img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+/***Kontakt side***/
+#kontakt2{
+  background-color: #fff;
+  color: #6C5848;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+#kontakt2 h2{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.linje2 {
+  height: 2px;
+  background-color: #6C5848;
+  width: 500px;
+  margin: 2rem 0;
+  margin-top: 0;
+}
+.grid3-2{
+  display: flex;
+  gap: 100px;
+  margin: 0;
+  justify-content: center;
+}
+.grid3-2 p{
+  margin: 0;
+}
+
+/* Projekterne */
+.breadcrumb {
+  font-size: 16px;
+  color: #6C5848;
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Almarai", sans-serif;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #929292;
+  font-weight: 500;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb span {
+  color: #6C5848;
 }
