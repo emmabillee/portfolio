@@ -1,44 +1,44 @@
-const carousel = document.getElementById("carousel");
-let isDown = false;
-let startX;
-let scrollStart;
+const slides = document.querySelector(".slides");
+const slideCount = slides.children.length / 2;
+const cardWidth = 330;
 
-// Drag-to-scroll
-carousel.addEventListener("mousedown", (e) => {
-  isDown = true;
-  startX = e.pageX;
-  scrollStart = carousel.scrollLeft;
-  carousel.style.cursor = "grabbing";
-});
+// Scroll med smooth ved klik
+function skiftSlide(retning) {
+  slides.classList.add("smooth-scroll");
+  slides.scrollBy({
+    left: retning * cardWidth,
+    behavior: "smooth"
+  });
+}
 
-carousel.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  const dx = e.pageX - startX;
-  carousel.scrollLeft = scrollStart - dx;
-});
+// Håndter jump ved scroll
+slides.addEventListener("scroll", () => {
+  const totalWidth = cardWidth * slideCount;
 
-carousel.addEventListener("mouseup", () => {
-  isDown = false;
-  carousel.style.cursor = "grab";
-});
-
-carousel.addEventListener("mouseleave", () => {
-  isDown = false;
-  carousel.style.cursor = "grab";
-});
-
-// Infinity-effekt
-carousel.addEventListener("scroll", () => {
-  const scrollWidth = carousel.scrollWidth / 2;
-  if (carousel.scrollLeft >= scrollWidth) {
-    // Rul sømløst tilbage til start
-    carousel.scrollLeft = carousel.scrollLeft - scrollWidth;
-  } else if (carousel.scrollLeft <= 0) {
-    carousel.scrollLeft = carousel.scrollLeft + scrollWidth;
+  if (slides.scrollLeft >= totalWidth) {
+    disableSmoothScroll();
+    slides.scrollLeft = slides.scrollLeft - totalWidth;
+    enableSmoothScroll();
+  } else if (slides.scrollLeft <= 0) {
+    disableSmoothScroll();
+    slides.scrollLeft = slides.scrollLeft + totalWidth;
+    enableSmoothScroll();
   }
 });
 
-// Start midt i listen, så man kan scrolle begge veje fra start
+// Start i midten
 window.addEventListener("load", () => {
-  carousel.scrollLeft = carousel.scrollWidth / 4;
+  slides.scrollLeft = cardWidth * slideCount / 2;
 });
+
+// Midlertidigt fjern smooth scroll
+function disableSmoothScroll() {
+  slides.classList.remove("smooth-scroll");
+}
+
+function enableSmoothScroll() {
+  // Tilføj efter en kort pause
+  setTimeout(() => {
+    slides.classList.add("smooth-scroll");
+  }, 50);
+}
