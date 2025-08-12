@@ -390,7 +390,7 @@ font-family: "Almarai", sans-serif;
   color: #6C5848;
   font-weight: 500;
   transition: color 0.3s ease;
-  font-size: 25px;
+  font-size: 20px;
 }
 .nav-links a:hover {
   text-decoration: underline;
@@ -591,7 +591,7 @@ nav a {
 #cv{
   color: #fff;
   display: flex;
-  gap: 200px;
+  gap: 150px;
   justify-content: center;
   padding: 75px;
   padding-bottom: 0px;
@@ -662,7 +662,7 @@ nav a {
 }
 .grid3{
   display: flex;
-  gap: 100px;
+  gap: 270px;
   margin: 0;
   justify-content: center;
 }
@@ -787,6 +787,8 @@ nav a {
   padding: 75px;
 }
 
+
+
 /***Billedecarousel***/
 .carousel {
   position: relative;               /* Muliggør absolut placering af knapper */
@@ -857,23 +859,48 @@ nav a {
   #projekter2{
     margin-bottom: 0px;
   }
+      .projekt {
+        margin-bottom: 0px;
+    }
+    .grid2 p {
+      margin-bottom: 20pxpx;
+    }
+     .cta-knap {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
+        .cta-knap2 {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
+
 }
 
 
 /*********************************CV*******************/
 /***CV2***/
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  align-items: start;
+  padding: 30px 0;
+  justify-content: start; /* nyt: sørger for at grid’en starter helt til venstre */
+}
 #cv-sektion2{
   background-color: #fff;
  
 }
-#cv2{
+#cv2 {
   display: flex;
   color: #6C5848;
   gap: 200px;
-  justify-content: center;
-  padding: 75px;
+  justify-content: flex-start; /* nyt: venstrejustér */
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
+  margin-left: 0; /* sikrer ingen indryk */
 }
 
 #cv2 h1{
@@ -884,7 +911,7 @@ nav a {
 }
 .grid1-cv{
   display: flex;
-  gap: 200px;
+  gap: 100px;
   margin: 0;
   justify-content:space-between;
 }
@@ -894,12 +921,12 @@ nav a {
 .linje2 {
   height: 2px;
   background-color: #6C5848;
-  width: auto;
-  margin: 20px 0;
+width: 300px;  margin: 20px 0;
   margin-top: 0;
 }
 .knap{
-  padding-bottom: 75px;}
+  padding-bottom: 75px;
+}
 
 /***Kompetencer***/
 #kompetencer h2{
@@ -913,9 +940,6 @@ font-weight: 400;
   gap: 5px 5px;               
   max-width: 600px;             
   margin: 0 auto;  
-}
-#grid-kompetencer{
-margin-left: 100px;
 }
 
 /***Værktøjer***/
@@ -931,44 +955,48 @@ display: flex;
   max-width: 1500px;             
   margin: 0 auto;  
 }
-#grid-værktøjer{
-margin-left: 100px;
-}
 
 /***Erfaring***/
 #erfaring{
   background-color: #fff;
-}
-#erfaring{
-  /* display: flex; */
   color: #6C5848;
   gap: 200px;
   justify-content: center;
-  padding: 75px;
+  padding: 75px 0;
   padding-top: 20px;
   padding-bottom: 0px;
   margin-bottom: 50px;
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 #erfaring h1{
   color: #6C5848;
 }
 #erfaring h2{
   margin-bottom: 20px;
-  margin-top: 50px;
-}
-.cv-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner */
-  gap: 50px;
-  align-items: start;
-  padding: 40px;
+  margin-top: 0px;
 }
 
+/***Kolonner***/
+.venstre-kolonne{
+  margin-left: 175px; /* før: 90px */
+}
+.kompetencer,
+.værktøjer {
+  margin: 0; /* før: auto */
+  justify-content: flex-start; /* venstrejustér indholdet */
+}
 .venstre-kolonne,
 .højre-kolonne {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.margin-top{
+  margin-top: 20px;
+}
+.margin-bottom{
+  margin-bottom: 50px;
 }
 @media (max-width: 768px) {
   .cv-container {
@@ -996,9 +1024,14 @@ margin-left: 100px;
     width: 100% !important;
     max-width: 600px !important;  /* maks bredde */
     box-sizing: border-box;
+    margin-left: 0px;
   }
-
-  
+.margin-bottom{
+  margin-bottom: 0px;
+}
+  .margin-top{
+  margin-top: 0px;
+}
   #erfaring {
     padding: 20px 10px !important;
     gap: 20px !important;
@@ -1023,10 +1056,10 @@ margin-left: 100px;
   }
 #erfaring h2 {
 margin-top: 10px;
-margin-bottom: -40px;
+margin-bottom: -20px;
 }
 #erfaring h3 {
-margin-top: 60px;
+margin-top: 40px;
 }
 #erfaring p {
 margin-bottom: 10px;
@@ -1049,12 +1082,13 @@ margin-bottom: 10px;
 #ommig-tekst{
   color: #6C5848;
   flex: 2;
-  max-width: 500px;
+  max-width: 600px; 
+  margin-left: 80px;
 }
 #ommig-tekst h2{
   color: #6C5848;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 0px;
 }
 #ommig-tekst h3{
@@ -1064,7 +1098,7 @@ margin-bottom: 10px;
   margin-top: 20px;
 }
 #ommig-tekst li{
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 10px;
   font-family: "Almarai", sans-serif;
 }
@@ -1074,27 +1108,28 @@ margin-bottom: 10px;
   padding-left: 0;
 }
 #ommig-tekst p{
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Almarai", sans-serif;
   line-height: 30px;
   margin-top: 10px;
 }
 #ommig {
-  padding: 3rem 2rem;
+  padding: 50px 2rem;
   background-color: #fdfdfd;
 }
 .ommig-wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 50px;            /* Mindre mellemrum mellem kolonnerne */
   justify-content: center;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1400px;    /* Gør containeren bredere */
   margin: 0 auto;
-  flex-wrap: wrap; /* gør den mobilvenlig */
+  flex-wrap: wrap;      /* mobilvenlig */
+  flex-direction: row-reverse; /* Beholder ombytning */
 }
 #ommig-billede {
-  flex: 1;
-  max-width: 500px;
+   flex: 1;
+  max-width: 600px;  
 }
 #ommig-billede img {
   width: 100%;
@@ -1123,9 +1158,11 @@ margin-bottom: 10px;
     height: auto;
   }
 
+  
   #ommig-tekst {
     max-width: 100%;
     flex: none;
+    margin-left: 0px;
   }
 
   #ommig-tekst ul {
@@ -1134,20 +1171,21 @@ margin-bottom: 10px;
 
   .cta-knap2 {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: -10px;
   }
 }
 
 
 /*********************************Kontakt*******************/
 #kontakt2{
-  background-color: #fff;
+  width: 100vw; /* viewport bredde */
+  max-width: 100vw !important;
+  padding: 25px 50px; /* lidt luft til siderne */
+  box-sizing: border-box;
   color: #6C5848;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
   margin-bottom: 50px;
-  margin-top: 25px;
+    margin-left: 8px;
+
 }
 #kontakt2 h2{
   font-weight: 400;
@@ -1162,12 +1200,36 @@ margin-bottom: 10px;
 }
 .grid3-2{
   display: flex;
-  gap: 100px;
-  margin: 0;
+  gap: 40px;
+  margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Gør container bredere */
+
 }
+.grid3-2 > div:first-child {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  max-width: 600px; /* Begrænser tekstkolonne */
+}
+
+.grid3-2 > div:last-child {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0;
+  max-width: none;
+}
+
 .grid3-2 p{
   margin: 0;
+}
+.billede-kontakt {
+  max-width: 900px;       /* Gør billedet større */
+  width: 100%;            /* Sikrer at billedet skalerer responsivt */
+  height: auto;
+  border-radius: 4px;     /* Beholder evt. rundede hjørner */
 }
 
 @media (max-width: 768px) {
@@ -1179,6 +1241,9 @@ margin-bottom: 10px;
     text-align: left; /* Venstrejusteret tekst */
     margin-top: 10px;
     margin-bottom: 0px;
+    margin-left: 0px;
+      align-self: flex-start; /* sørger for at div'en justeres til venstre i flex-konteksten */
+
   }
 
   .grid3-2 {
@@ -1186,7 +1251,18 @@ margin-bottom: 10px;
     flex-direction: column;
     gap: 30px;
     padding: 20px 15px;
+    margin-left: 0px;
+      align-items: flex-start; /* skubber børn til venstre */
+
   }
+    .kontaktfomular {
+    width: 90%;      /* Fylder hele den tilgængelige bredde */
+    max-width: 500px; /* Begrænser bredde hvis ønsket */
+    margin-left: 0;
+    text-align: left;
+    align-self: flex-start;
+  }
+
 
   .billede-kontakt {
     max-width: 360px;
@@ -1204,7 +1280,7 @@ margin-bottom: 10px;
 }
 
 
-
+/*********************************Projekter undersider*******************/
 /***Breadcumb***/
 .breadcrumb {
   font-size: 16px;
@@ -1275,8 +1351,65 @@ margin-top: 20px;
   color: #C2B4A9;
   margin-top: 0.5rem;
 }
+/* Mobilversion af #projekt */
+@media (max-width: 768px) {
+   nav.breadcrumb {
+    font-size: 14px;
+    padding: 10px 15px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    padding-bottom: 0px;
+  }
 
-/* Coop */
+  nav.breadcrumb a {
+    color: #6C5848;
+    text-decoration: none;
+  }
+
+  nav.breadcrumb span {
+    color: #6C5848;
+  }
+
+  #projekt {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0px 15px;
+  }
+
+  #projekt-tekst {
+    flex: 1 1 100%;
+    margin-top: 0px;
+  }
+
+  #projekt-billeder {
+    flex: 1 1 100%;
+    margin-top: 0; /* Fjerner den store top-margin */
+    gap: 1rem;
+  }
+
+  #projekt-billeder img {
+    width: 100%;
+    height: auto;
+  }
+
+  #projekt-billeder p {
+    font-size: 12px;
+  }
+
+  #projekt-tekst ul {
+    margin-left: 1rem;
+  }
+
+  #projekt-tekst li {
+    font-size: 15px;
+  }
+}
+
+
+/*********************************CV undersider*******************/
+/***Coop***/
 .grid-coop {
   display: grid;
   grid-template-columns: 400px 1fr; /* Billede: 500px, tekst: fleksibel */
@@ -1307,9 +1440,6 @@ margin-top: 20px;
   border-radius: 8px;
   object-fit: cover;
 }
-
-
-
 
 .download-simple {
   display: inline-flex;
@@ -1360,6 +1490,7 @@ margin-top: 20px;
 }
 
 
+/***Badutterne***/
 .youtube-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 forhold */
